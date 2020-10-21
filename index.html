@@ -1,0 +1,693 @@
+<!doctype html>
+<html>
+
+<!-- to do: change hover text or hyperlink colors? -->
+
+<!-- mostly has information about webiste style -->
+<head>
+	<meta charset="utf-8"> 
+	<!-- meta tag specifies which character set a website is written with; https://stackoverflow.com/questions/29869743/what-is-meta-charset-utf-8 -->
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, viewport-fit=cover"> 
+	<!-- use the viewport meta tag to control layout on mobile browsers; https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag-->
+	<meta name="apple-mobile-web-app-capable" content="yes" /> 
+	<!-- If content is set to yes, the web application runs in full-screen mode; otherwise, it does not. The default behavior is to use Safari to display web content.; https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html -->
+
+	<!-- Page Title -->
+	<!-- this is what is displayed on the tab of the webpage -->
+	<title>Nida Obatake</title> 
+
+<!--WHAT IS THIS??!-->
+	<!-- Compressed Styles -->
+	<!-- I'm not sure what the difference between slides.css and slides.min.css...-->
+	<link href="css/slides.min.css" rel="stylesheet" type="text/css">
+	<!--<link href="css/slides.css" rel="stylesheet" type="text/css">--> 
+
+<!--WHAT IS THIS??!-->
+	<!-- jQuery 3.3.1 -->
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+	<script src="js/jquery.min.js"></script>
+
+	<!-- Compressed Scripts -->
+	<script src="js/slides.min.js" type="text/javascript"></script>
+
+	<!-- Fonts and Material Icons -->
+	<!-- The Developer API gives access to the metadata available for all families served by Google Fonts. -->
+	<link rel="stylesheet" as="font" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700"/>
+
+
+</head>
+
+<!-- body; everything is on one page -->
+<body class="slides horizontal simplifiedMobile animated">
+
+<!-- SVG library -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+	<symbol id="logo" viewBox="0 0 272.168 113.968"><title>Slides Framework</title><g
+	width="272.168" height="113.968" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="white" stroke-width="0.25mm" fill="white" style="stroke:white;stroke-width:0.25mm;fill:white"><path d="M 0 33.252 L 16.772 33.252 L 17.285 42.407 A 28.146 28.146 0 0 1 37.727 31.88 A 36.452 36.452 0 0 1 40.356 31.787 A 30.826 30.826 0 0 1 50.921 33.45 Q 64.466 38.378 65.478 57.915 A 61.201 61.201 0 0 1 65.552 60.132 L 65.552 112.5 L 47.754 112.5 L 47.754 61.157 A 27.733 27.733 0 0 0 47.474 57.073 Q 47.163 54.989 46.506 53.321 A 10.908 10.908 0 0 0 44.495 49.988 A 9.752 9.752 0 0 0 40.611 47.416 Q 37.826 46.362 33.838 46.362 A 18.634 18.634 0 0 0 26.4 47.79 Q 22.056 49.659 19.094 53.977 A 23.676 23.676 0 0 0 17.798 56.104 L 17.798 112.5 L 0 112.5 L 0 33.252 Z M 272.168 112.5 L 254.004 112.5 Q 253.038 110.628 252.271 106.814 A 60.77 60.77 0 0 1 251.953 105.103 A 27.634 27.634 0 0 1 231.918 113.956 A 33.682 33.682 0 0 1 231.152 113.965 A 34.166 34.166 0 0 1 222.337 112.883 A 25.433 25.433 0 0 1 211.67 107.153 A 22.644 22.644 0 0 1 205.797 99.04 A 22.467 22.467 0 0 1 204.126 90.308 A 27.114 27.114 0 0 1 205.395 81.797 A 21.517 21.517 0 0 1 213.538 70.862 Q 220.537 65.824 232.011 64.532 A 75.616 75.616 0 0 1 240.454 64.087 L 251.367 64.087 L 251.367 58.887 A 17.836 17.836 0 0 0 250.893 54.658 A 12.401 12.401 0 0 0 247.925 49.036 A 10.748 10.748 0 0 0 243.338 46.177 Q 241.594 45.599 239.466 45.419 A 23.86 23.86 0 0 0 237.451 45.337 A 19.906 19.906 0 0 0 233.058 45.796 A 13.848 13.848 0 0 0 227.49 48.376 Q 223.608 51.416 223.608 56.104 L 205.811 56.104 A 19.314 19.314 0 0 1 209.09 45.386 A 24.497 24.497 0 0 1 210.132 43.909 A 27.288 27.288 0 0 1 218.157 36.895 A 34.461 34.461 0 0 1 221.887 35.01 A 39.159 39.159 0 0 1 233.463 32.042 A 48.213 48.213 0 0 1 238.477 31.787 Q 250.157 31.787 257.864 36.715 A 26.227 26.227 0 0 1 260.669 38.782 A 23.348 23.348 0 0 1 268.619 52.82 A 34.006 34.006 0 0 1 269.165 58.447 L 269.165 94.189 A 62.189 62.189 0 0 0 269.488 100.742 Q 269.835 104.004 270.553 106.731 A 26.31 26.31 0 0 0 272.168 111.255 L 272.168 112.5 Z M 170.288 40.576 L 170.288 0 L 188.086 0 L 188.086 112.5 L 171.973 112.5 L 171.094 104.297 A 25.811 25.811 0 0 1 152.233 113.88 A 34.795 34.795 0 0 1 149.78 113.965 Q 135.864 113.965 127.258 102.759 A 38.706 38.706 0 0 1 120.821 89.598 Q 119.262 84.107 118.824 77.568 A 78.947 78.947 0 0 1 118.652 72.29 Q 118.652 53.979 127.148 42.883 A 26.884 26.884 0 0 1 146.659 31.939 A 34.337 34.337 0 0 1 149.927 31.787 A 29.303 29.303 0 0 1 159.696 33.351 A 25.044 25.044 0 0 1 170.288 40.576 Z M 102.612 33.252 L 102.612 112.5 L 84.814 112.5 L 84.814 33.252 L 102.612 33.252 Z M 170.288 89.722 L 170.288 55.884 A 18.414 18.414 0 0 0 165.875 50.175 Q 162.218 47.077 156.973 46.496 A 22.754 22.754 0 0 0 154.468 46.362 Q 145.949 46.362 141.273 53.016 A 19.143 19.143 0 0 0 141.138 53.21 A 22.358 22.358 0 0 0 138.374 59.026 Q 136.574 64.622 136.458 72.703 A 78.409 78.409 0 0 0 136.45 73.828 Q 136.45 81.889 138.519 87.587 A 22.585 22.585 0 0 0 141.101 92.688 A 14.778 14.778 0 0 0 151.739 99.297 A 19.573 19.573 0 0 0 154.321 99.463 A 19.041 19.041 0 0 0 161.408 98.205 Q 167.051 95.962 170.288 89.722 Z M 251.367 90.234 L 251.367 75.293 L 241.772 75.293 A 45.887 45.887 0 0 0 236.599 75.565 Q 230.484 76.261 226.904 78.735 A 10.928 10.928 0 0 0 222.045 86.578 A 14.398 14.398 0 0 0 221.924 88.477 A 12.456 12.456 0 0 0 222.444 92.163 A 9.759 9.759 0 0 0 225.33 96.643 A 11.565 11.565 0 0 0 230.45 99.246 Q 232.284 99.683 234.448 99.683 A 20.245 20.245 0 0 0 244.373 97.119 Q 249.023 94.556 251.367 90.234 Z M 84.245 9.253 A 10.621 10.621 0 0 0 83.716 12.671 Q 83.716 16.699 86.316 19.373 Q 88.916 22.046 93.75 22.046 A 16.865 16.865 0 0 0 94.255 22.038 Q 98.724 21.904 101.221 19.373 A 8.876 8.876 0 0 0 103.288 16.123 A 10.107 10.107 0 0 0 103.857 12.671 A 12.181 12.181 0 0 0 103.834 11.914 A 9.211 9.211 0 0 0 101.221 5.859 Q 99.47 4.06 96.75 3.455 A 13.825 13.825 0 0 0 93.75 3.149 Q 91.857 3.149 90.307 3.565 A 8.422 8.422 0 0 0 86.316 5.859 A 9.022 9.022 0 0 0 84.245 9.253 Z" vector-effect="non-scaling-stroke"/></g>
+	</symbol>
+
+<symbol id="arrow-down" viewBox="0 0 24 24"><path d="M12 18c-.2 0-.5-.1-.7-.3l-11-10c-.4-.4-.4-1-.1-1.4.4-.4 1-.4 1.4-.1l10.4 9.4 10.3-9.4c.4-.4 1-.3 1.4.1.4.4.3 1-.1 1.4l-11 10c-.1.2-.4.3-.6.3z"/></symbol>
+
+
+</svg>
+	
+	<!-- Panel Top #05 -->
+	<!-- The <nav> tag defines a set of navigation links.-->
+	<nav class="panel top">
+		<!--The <div> tag defines a division or a section in an HTML document.
+			The <div> element is often used as a container for other HTML elements to style them with CSS or to perform certain tasks with JavaScript.-->
+		<div class="sections desktop">
+			
+			<div class="left"><a href="#" title="Nida"><svg style="width:82px; height:24px"><use xmlns:xlink="http://www.w3.org/1999/xlink" href="#logo"></use></svg></a></div> -->
+			<!--https://www.w3schools.com/xml/xml_xlink.asp -->
+<!--
+			<div class="left"><a class = "button red gradient" href="#">Nida Obatake</a></div>
+-->
+
+			<div class="center">
+				<!-- The <ul> tag defines an unordered (bulleted) list. -->
+				<ul class="hideForMobile menu uppercase">
+					<!-- these #names correspond to the "data-name"s for the slides they correspond to -->
+					<li><a href="#">Home</a></li>
+					<li><a href="#research">Research</a></li>
+					<li><a href="#teaching">Teaching</a></li>
+					<li><a href="#cv">CV</a></li>
+					<li><a href="#conferences">Conferences</a></li>
+					<li><a href="#aboutme">About Me</a></li>
+				</ul>
+			</div>
+
+			<div class="right"> </div>
+		</div>
+	</nav>
+
+<!-- Home screen -->
+<!-- I like Slide 1 (Home) or Slide 5 (Case Study) for the home screen -->
+<section class="slide fade-6 kenBurns">
+	<div class="content">
+		<div class="container">
+			<div class="wrap">
+
+				<div class="fix-12-12 toCenter"><!-- fix-FIRST NUMBER CONTROLS WIDTH-->
+					<div class="fix-7-12">
+						<h1 class="ae-1 huge fromAbove margin-bottom-2">Nida Obatake</h1>
+						<p class="margin-bottom-1 ae-2"><span class="opacity-6">Mathematics PhD candidate, Texas A&M University</span></p>
+					</div>
+					<ul class="grid fixedSpaces equal margin-top-5">
+						<li class="col-4-12 col-tablet-1-3 col-phablet-1-1 ae-4 fromLeft">
+							<h3>Research</h3>
+							<p class="small opacity-6">Algebraic and geometric methods for problems in mathematical biology.</p>
+						</li>
+						<li class="col-4-12 col-tablet-1-3 col-phablet-1-1 ae-6 fromBottom">					
+							<h3>Curriculum Vitae</h3>
+							<p class="small opacity-6"><a class="underline" href="nobatake-cv.pdf">updated September 2020</a></p>
+						</li>		
+						<li class="col-4-12 col-tablet-1-3 col-phablet-1-1 ae-5 fromRight">
+							<h3>Contact</h3>
+							<p class="small opacity-6">nida [at] math.tamu.edu <br> For students: nobatake [at] tamu.edu
+							</p>
+						</li>					
+					</ul>
+					
+					<li class="col-6-12 unordered">
+              		<img class="ae-7 fromBottom rounded" width="400" src="assets/img/sari.jpg" alt="Nida Obatake" data-action="zoom"/>
+            		</li>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="background" style="background-image:url(assets/img/background/maroon/jacob-vibert-n_wJFKg43xE-unsplash.jpg)"></div>
+	<!--<div class="background" style="background-image:url(assets/img/background/lefty-kasdaglis-1G-WGPSCLzY-unsplash.jpg)"></div>-->
+</section>
+
+<!-- Research Page -->
+<!-- I like Slide 2 (videos) and Slide 3 (features) for the research page-->
+<section class="slide fade-6 kenBurns" data-name="research">
+	<div class="content">
+		<div class="container">
+			<div class="wrap">
+				
+				<div class="fix-12-12">
+					<ul class="flex grid">
+
+						<li class="col-6-12 col-tablet-1-3 col-phablet-1-1 left">	
+							<h1 class="ae-1 fromLeft">Publications</h1>
+
+							<ul class="slider animated" data-slider-id="60-1">
+
+							<!-- All Publications -->	
+								<li class="selected ae-2 fromLeft">
+									<div class="rounded" data-popup-id="60-1"> <!-- removed shadow from class to omit border in box -->
+									<ol class="ordered">
+										<li class="ae-4">"Mixed volume for small reaction networks" with Anne Shiu and Dilruba Sofia. Submitted to Involve (in revision) (2020). Available from <a class="underline" href="https://arxiv.org/pdf/2004.14467">arXiv:2004.14467</a>.</li>
+										<br>
+										<li class="ae-5">"Dynamics of ERK regulation in the processive limit" with Carsten Conradi, Anne Shiu, and Xiaoxian Tang. Submitted to Journal of Mathematical Biology (in revision) (2020). Available from <a class="underline" href="https://arxiv.org/pdf/1910.14452.pdf">arXiv:1910.14452</a>.</li>
+										<br>
+										<li class="ae-6">"Identifiability of Linear Compartmental Models: The Effect by Moving Inputs, Outputs, and Leaks" with Seth Gerberding and Anne Shiu. Linear and Multilinear Algebra (2020). Available from <a class="underline" href="https://arxiv.org/pdf/1910.13549.pdf">arXiv:1910.13549</a>.</li>
+										<br>
+										<li class="ae-7">"Modeling R-loops with Formal Grammars" with Nata&#353a Jonoska, Svetlana Poznanovikj, Candice Price, Manda Riehl, and Mariel Vazquez. Springer Nature: Using Mathematics to Understand Biological Complexit (to appear) (2019).</li>
+										<br>
+										<li class="ae-8">"Oscillations and bistability in a model of ERK regulation" with Anne Shiu, Xiaoxian Tang, and Angelica Torres. J. Math. Biol., 79:4, pp 1515–1549 (2019). Available from <a class="underline" href="https://arxiv.org/pdf/1903.02617.pdf">arXiv:1903.02617</a>.</li>
+										<br>
+										<li class="ae-9">"On the identification of k-inductively pierced codes using toric ideals" with Molly Hoch and Samuel Muthiah. Submitted (in revision). Available from <a class="underline" href="https://arxiv.org/pdf/arXiv:1807.02390.pdf">arXiv:1807.02390</a>.</li>
+										<br>
+										<li class="ae-9">"Neural ideals and stimulus space visualization" with Elizabeth Gross and Nora Youngs. Advances in Applied Mathematics, Volume 95, Pages 65-95, ISSN 0196-8858 (2018). Available from <a class="underline" href="https://www.sciencedirect.com/science/article/pii/S0196885817301434">ScienceDirect</a>.</li>
+										<br>
+										<li class="ae-10">"Drawing place field diagrams of neural codes using toric ideals." San Jose State Masters Theses (2016). Available from <a class="underline" href="https://scholarworks.sjsu.edu/cgi/viewcontent.cgi?referer=https://www.google.com/&httpsredir=1&article=8280&context=etd_theses">SJSU ScholarWorks</a>.
+										</li>
+										<br>
+										<li class="ae-10">"Mathematical origami of a single vertex: regular K-points" with R. Alperin, R. Bommu, M. Gurdine, L. Mattick, J. Orozco, and J. Schrag. In preparation (2016).</li>
+									</ol>
+									</div>
+								</li>
+
+								<!-- Chemical Reaction Network papers -->
+								<li class="fromLeft">
+									<div class="rounded" data-popup-id="60-2">
+									<ul>
+										<li>"Mixed volume for small reaction networks" with Anne Shiu and Dilruba Sofia. Submitted to Involve (2020). Available from <a class="underline" href="https://arxiv.org/pdf/2004.14467">arXiv:2004.14467</a>.</li>
+										<br>
+										<li>"Dynamics of ERK regulation in the processive limit" with Carsten Conradi, Anne Shiu, and Xiaoxian Tang. Submitted to Journal of Mathematical Biology (2019). Available from <a class="underline" href="https://arxiv.org/pdf/1910.14452.pdf">arXiv:1910.14452</a>.</li>
+										<br>
+										<li>"Oscillations and bistability in a model of ERK regulation" with Anne Shiu, Xiaoxian Tang, and Angelica Torres. J. Math. Biol., 79:4, pp 1515–1549 (2019). Available from <a class="underline" href="https://arxiv.org/pdf/1903.02617.pdf">arXiv:1903.02617</a>.</li>
+									</ul>
+									</div>
+								</li>
+
+								<!-- Neural Code papers -->
+								<li class="fromLeft">
+									<div class="rounded" data-popup-id="60-3">
+									<ul>
+										<li>"On the identification of k-inductively pierced codes using toric ideals" with Molly Hoch and Samuel Muthiah. Submitted (in revision). Available from <a class="underline" href="https://arxiv.org/pdf/arXiv:1807.02390.pdf">arXiv:1807.02390</a>.</li>
+										<br>
+										<li>"Neural ideals and stimulus space visualization" with Elizabeth Gross and Nora Youngs. Advances in Applied Mathematics, Volume 95, Pages 65-95, ISSN 0196-8858 (2018). Available from <a class="underline" href="https://www.sciencedirect.com/science/article/pii/S0196885817301434">ScienceDirect</a>.</li>
+										<br>
+										<li>"Drawing place field diagrams of neural codes using toric ideals." San Jose State Masters Theses (2016). Available from <a class="underline" href="https://scholarworks.sjsu.edu/cgi/viewcontent.cgi?referer=https://www.google.com/&httpsredir=1&article=8280&context=etd_theses">SJSU ScholarWorks</a>.
+										</li>
+									</ul>
+									</div>
+								</li>
+
+								<!-- Other papers -->
+								<li class="fromLeft">
+									<div class="rounded" data-popup-id="60-4">
+									<ul>
+										<li class="ae-4">"Identifiability of Linear Compartmental Models: The Effect by Moving Inputs, Outputs, and Leaks" with Seth Gerberding and Anne Shiu. Submitted to Linear and Multilinear Algebra (in revision) (2019). Available from <a class="underline" href="https://arxiv.org/pdf/1910.13549.pdf">arXiv:1910.13549v2</a>.</li>
+										<br>
+										<li>"Modeling R-loops with Formal Grammars" with Nata&#353a Jonoska, Svetlana Poznanovikj, Candice Price, Manda Riehl, and Mariel Vazquez. Submitted to Springer special edition on Using Mathematics to Understand Biological Complexity, WIMB (in revision) (2019).</li>
+										<br>
+										<li>"Mathematical origami of a single vertex: regular K-points" with R. Alperin, R. Bommu, M. Gurdine, L. Mattick, J. Orozco, and J. Schrag. In preparation.</li>
+									</ul>
+									</div>
+								</li>
+							</ul> 
+						</li>
+
+						<li class="hideForMobile col-6-12 col-tablet-1-2 col-phablet-1-1 col-phone-1-1 left">
+							<h1 class="ae-3 fromRight">Research Interests</h1>
+							<p class="normal ae-4 fromRight"><span class="opacity-9">I use methods from computational algebraic geometry to tackle questions in mathematical biology. My advisor is <a class="underline" href="https://www.math.tamu.edu/~annejls/">Dr. Anne Shiu</a>.</span></p>
+							<!--<p class="small ae-4 fromRight"><span class="opacity-5">I use methods from computational algebraic geometry to tackle questions in mathematical biology. Currently, I am interested in understanding both the number and stability of steady states coming from models of chemical reaction networks. My advisor is <a href="https://www.math.tamu.edu/~annejls/">Professor Anne Shiu</a>.</span></p>-->
+							<div class="hideForMobile fix-3-12 horizontalCenter">
+								<br>
+							<ul class="tabs controller uppercase bold ae-5 center fromCenter" data-slider-id="60-1">
+								<li class="selected">All Publications</li>
+								<li>Chemical Reaction Networks</li>
+								<li>Neural Codes</li>
+								<li>Others</li>
+							</ul>
+							<br><br>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="background" style="background-image:url(assets/img/background/maroon/jessica-fadel-mdNQ3R5dT6w-unsplash.jpg)"></div>
+
+	<!--<div class="background" style="background-image: url(assets/img/background/ali-yahya-bZD31MD4jhY-unsplash.jpg)"></div>-->
+</section>
+
+<!-- Slide 3 (#27) -->
+<!-- Slide 6 (#83) -->
+<section class="slide fade-6 kenBurns" data-name="teaching">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+
+        <div class="fix-8-12">
+          <h1 class="ae-1">Spring 2020</h1>
+          <ul class="center grid grid-82 noSpaces equal ae-2 fadeIn">
+            <li class="rounded ae-3">
+              <h3 class="address ae-5">I will lead the Math 140 Week-in-Review</h3>
+              <div class="center ae-6">
+                <p class="center uppercase light small margin-top-1 margin-bottom-2 opacity-6">Mathematics for Business and Social Sciences</p>
+              </div>
+              <a href="https://www.math.tamu.edu/~nida/math140wir.html" class="button red gradient center cropBottom ae-7" style="padding:16px!important;">Math 140 Week-in-Review Homepage</a>
+<!--			
+              <a href="/~nida/math140wir.html" class="button red gradient center cropBottom ae-7" style="padding:16px!important;">week-in-review homepage</a>
+-->
+	            <div class="margin-top-2 margin-bottom-10 equalElement ae-8">
+                	<ul class="p tiny">
+                  	<li>email <strong>nobatake [at] tamu.edu</strong> for teaching related correspondence</li>
+                	</ul>
+              	</div>
+            </li>
+          </ul>
+        </div> 
+
+<!--      
+        <div class="fix-8-12">
+          <h1 class="ae-1">Fall 2019</h1>
+          <ul class="center grid grid-82 noSpaces equal ae-2 fadeIn">
+            <li class="rounded ae-3">
+              <h3 class="address ae-5">Math 140, Section 515</h3>
+              <div class="center ae-6">
+                <p class="center uppercase light small margin-top-1 margin-bottom-2">Mathematics for Business and Social Sciences</p>
+              </div>
+              <a href="https://ecampus.tamu.edu/" class="button red gradient center cropBottom ae-7" style="padding:16px!important;">course material on eCampus</a>
+	            <div class="margin-top-2 margin-bottom-10 equalElement ae-8">
+                	<ul class="p tiny">
+                  	<li>email <strong>nobatake [at] tamu.edu</strong> for teaching related correspondence</li>
+                	</ul>
+              	</div>
+            </li>
+          </ul>
+        </div> 
+-->
+      </div>
+    </div>
+  </div>
+  <div class="background" style="background-image:url(assets/img/background/maroon/timothy-dykes-rgJI8jSpLXQ-unsplash.jpg)"></div>
+</section>
+
+<!-- Teaching OLD-->
+<!-- I like Slide 3 (features) for the teaching page-->
+<!-- Slide 4 (#26) -->
+<!-- <section class="slide fade-6 kenBurns" data-name="teaching">
+	<div class="content">
+		<div class="container">
+			<div class="wrap">
+				
+				<div class="fix-12-12 vertical-align align-top">
+					<h2 class="ae-1 small fromCenter margin-bottom-10"><span class="opacity-8">Fall 2019: Math 140 Section 515, Mathematics for Business and Social Sciences</span></h2>
+
+					<ul class="flex grid align-top">
+
+						<li class="col-4-12 margin-top-3">
+							<h1 class="ae-1 fromLeft">Fall 2019</h1>-->
+<!-- 							<div class="fix 2-12 center ae-2 fromLeft">
+								<ul class="tabs controller uppercase bold ae-2 fromCenter" data-slider-id="27-1">
+									<li class="selected">Announcements</li>
+									<li>Class Notes</li>
+									<li>Assignments</li>
+									<li>Exam Study Guides</li>
+									<li>Important Dates</li>
+									<li>Helpful resources</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="col-8-12">	
+							<ul class="slider animated" data-slider-id="27-1">-->
+								<!-- Announcements -->	
+<!-- 								<li class="selected fromRight">
+									<div data-popup-id="27-1">
+										<h2 class="opacity-8 left ae-2">Announcements</h2>
+										<div class="fix-7-12 center ae-2">
+											<ul class="unordered left list circle">
+												<li>I look forward to meeting you at our first day of class on <strong>Monday, August 26</strong>!</li>
+												<li>Please read through the <a class="underline" href="math140-syllabus-fall2019">course syllabus</a> carefully.</li>
+											</ul>
+										</div>
+									</div>
+								</li> -->
+								<!-- Class Notes-->
+<!-- 								<li class="fromRight">
+									<div data-popup-id="27-2">
+										<h2 class="opacity-8 left ae-2">Class Notes</h2>
+										<div class="fix-7-12 center ae-3">
+											<ul class="unordered left list circle">
+												<li>Link to filled in class notes on <a class="underline" href="https://1drv.ms/o/s!Amzxn0fIqZ5egVmY0NHfw8DEH0Oz">OneDrive</a>.</li>
+												<li>Please download skeletons of the class notes from <a class="underline" href="https://ecampus.tamu.edu/">eCampus</a>.</li>
+											</ul>
+										</div>
+									</div>
+								</li> -->
+
+								<!-- Assignments-->
+<!-- 								<li class="fromRight">
+									<div data-popup-id="27-3">
+										<h2 class="opacity-8 left ae-2">Assignments</h2>
+										<div class="fix-7-12 center ae-3">
+											<ul class="unordered left list circle">
+												<li>Assignment 1 will be posted when assigned.</li>
+											</ul>
+										</div>
+									</div>
+								</li> -->
+
+								<!-- Exam Study Guides-->
+<!-- 								<li class="fromRight">
+									<div data-popup-id="27-4">
+										<h2 class="opacity-8 left ae-2">Exam Study Guides</h2>
+										<div class="fix-7-12 center ae-3">
+											<ul class="unordered left list circle">
+												<li>Exam 1 Study Guide will be posted before Exam 1.</li>
+											</ul>
+										</div>
+									</div>
+								</li> -->
+
+								<!-- Important Dates -->
+<!-- 								<li class="fromRight">
+									<div data-popup-id="27-5">
+										<h2 class="opacity-8 left ae-2">Important Dates</h2>
+										<div class="fix-7-12 center ae-3">
+											<h3 class="opacity-8 left"><span class="opacity-8">Please add the following dates to your calendar:</span></h3>
+											<ul class="unordered left list circle">
+												<li>Exam 1 is on <strong>DATE</strong>.</li>
+												<li>Exam 2 is on <strong>DATE</strong>.</li>
+												<li>Exam 3 is on <strong>DATE</strong>.</li>
+												<li>Final Exam is on <strong>Tues, December 10 from 8AM-10AM in HELD 107</strong>.</li>
+											</ul>
+										</div>
+									</div>
+								</li> -->
+
+								<!-- Resources -->
+<!-- 								<li class="fromRight">
+									<div data-popup-id="27-6">
+										<h2 class="opacity-8 left ae-2">Resources at Texas A&M University</h2>
+										<div class="fix-7-12 center ae-3">
+											<ul class="unordered left list circle">
+												<li><a class="underline" href="https://www.math.tamu.edu/courses/math140/">Math 140 Course Page</a></li>
+												<li><a class="underline" href="https://www.math.tamu.edu/courses/helpsessions.html">Help Sessions</a></li>
+												<li><a class="underline" href="https://www.math.tamu.edu/courses/weekinreview.html">Math 140 Week-in-Review</a></li>
+												<li><a class="underline" href="http://asc.tamu.edu/Tutoring-TutorHubs/Find-Tutoring">Texas A&M Academic Success Center Tutoring</a> (Search for Math 140)</li>
+												<li><a class="underline" href="http://asc.tamu.edu/Study-Learning-Handouts-(1)/Success-in-Math">Tips for Studying Math</a></li>
+											</ul>
+										</div>
+									</div>
+								</li> -->
+<!-- 							</ul>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div> -->
+	
+<!-- 	<div class="background" style="background-image:url(assets/img/background/maroon/timothy-dykes-rgJI8jSpLXQ-unsplash.jpg)"></div> -->
+
+	<!--<div class="background" style="background-image: url(assets/img/background/sacha-styles-XK7thML3zEQ-unsplash.jpg)"></div>-->
+<!-- </section> -->
+ 
+<!-- embedded CV -->
+<section class="hideForMobile slide fade-6 kenBurns" data-name="cv">
+	<div class="content">
+		<div class="container">
+			<div class="wrap">
+				<object align="middle" class="rounded" data="nobatake-cv.pdf#view=fitH&toolbar=0&navpanes=0" type="application/pdf" style="width: 100%; height:700px;">
+<!--
+				<object class="rounded" data="nobatake-cv.pdf" type="application/pdf" width="800" height="550" hspace="-100"><a href="nobatake-cv.pdf">nobatake-cv.pdf</a> -->
+				</object>	
+			</div>		
+		</div>
+	</div>
+
+	<div class="background" style="background-image:url(assets/img/background/maroon/mohamed-nohassi-8QJPS39NGqw-unsplash.jpg)"></div>
+
+	<!--<div class="background" style="background-image: url(assets/img/background/damon-lam-UBpM_NPeYTw-unsplash.jpg)"></div>-->
+</section>
+
+
+<!-- Conferences -->
+<section class="hideForMobile slide fade-6 kenBurns" data-name="conferences">
+	<div class="content">
+		<div class="container">
+			<div class="wrap">
+				
+				<div class="fix-12-12 vertical-align align-top">
+					<!--<div class="fix-7-12">
+						<h1 class="ae-1 fromAbove margin-bottom-10">Conferences and Workshops</h1>
+					</div>-->
+
+					<ul class="flex grid align-top">
+
+						<li class="col-3-12 margin-top-3" style="height:500px;">
+							<!--<h1 class="ae-1 fromLeft">Fall 2019</h1>-->
+							<div class="fix 2-12 center ae-2 fromLeft">
+								<ul class="hideForMobile tabs controller uppercase bold ae-2 fromCenter" data-slider-id="17-1">
+									<li class="selected">Upcoming conferences</li>
+<!-- 									<li>Invited Talks</li>
+ -->									<li>Past Talks</li>
+<!-- 									<li>Posters</li>
+ -->									<li>Conferences Attended</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="col-9-12">	
+							<ul class="slider animated" data-slider-id="17-1">
+
+								<!-- Upcoming conferences -->	
+								<li class="selected fromRight">
+									<div data-popup-id="17-1">
+										<h2 class="opacity-8 left ae-2">Save the date!</h2>
+										<div class="fix-9-12 center ae-2">
+											<ul class="unordered left list circle">
+												<li class="margin-bottom-1"><span class="float-left"><a class="underline" href="http://faculty.smu.edu/sxu/SIAMTXLA19/index.html">SIAM Texas-Louisiana Sectional Meeting</a> at Southern Methodist University</span><span class="float-right">Nov 1-3, 2019</span> </li>
+												<p class="small opacity-6">I am organizing a minisymposium on "Algebraic, geometric, and combinatorial methods in mathematical biology".</p>
+												<li class="margin-bottom-1"><span class="float-left"><a class="underline" href="http://awm.math.tamu.edu/twims2020.html">Texas Women in Math Symposium 2020</a> at Texas A&M University</span><span class="float-right">Feb 1-2, 2020</span></li>
+												<p class="small opacity-6">I am organizing TWIMS 2020 along with Prof. Laura Matusevich, Aleksandra Sobieska, Elise Walker, and Priyanga Ganesan.</p>
+												<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+											</ul>
+										</div>
+									</div>
+								</li>
+
+								<!-- Invited Talks -->
+<!-- 								<li class="fromRight">
+									<div data-popup-id="17-2">
+										<h2 class="opacity-8 left ae-2">Invited Talks</h2>
+										<div class="fix-9-12 center ae-3">
+											<ul class="unordered left list circle">
+												<li><span class="float-left"><i>Sufficient conditions for 1- and 2- inductively pierced codes</i></span>​<span class="float-right">SIAM AG 2019</span></li>
+
+												<li><span class="float-left"><i>Toric ideals of Neural Codes</i></span>​<span class="float-right">AWM Research Symposium</span></li>
+
+												<li><span class="float-left"><i>Hopf bifurcations in the ERK network</i></span><span class="float-right">AWM Research Symposium</span>​</li>
+
+												<li><span class="float-left"><i>Oscillations in the ERK network</i></span>​<span class="float-right">AMS Spring Southeastern Sectional Meeting</span></li>
+
+												<li><span class="float-left"><i>Amoebas!</i></span>​<span class="float-right">TAMU-AMS GIGEM 2019</span></li>
+
+												<li><span class="float-left"><i>Place field diagrams of neural codes</i></span>​<span class="float-right">AMS Fall Central Sectional Meeting</span></li>
+
+												<li><span class="float-left"><i>Toric ideals of neural codes</i></span>​<span class="float-right">SIAM AG 2017</span></li>
+
+												<li><span class="float-left"><i>Drawing place field diagrams of neural codes using toric ideals</i></span>​<span class="float-right">Geometry Seminar, Texas A&M</span></li>
+
+												<li><span class="float-left"><i>Algebraic methods for realizing neural codes</i></span>​<span class="float-right">Colloquium, San Jose State University</span></li>
+
+												<li><span class="float-left"><i>Algebraic methods for realizing neural codes</i></span>​<span class="float-right">Colloquium, Santa Clara University</span></li>
+												<br><br><br><br><br><br><br><br><br><br>
+											</ul>
+										</div>
+									</div>
+								</li> -->
+
+								<!-- Past Talks-->
+								<li class="fromRight">
+									<div data-popup-id="17-2">
+										<h2 class="opacity-8 left ae-2">Past Talks</h2>
+											<p class="left small opacity-6">&#9632; indicates invited talk</p>
+										<div class="fix-9-12 center ae-3">
+											<ul class="unordered left list circle">
+												<li><span class="float-left"><i>Polyhedral methods for chemical reaction networks</i></span><span class="float-right">Geometry Seminar, Texas A&M</span></li>
+												<li style="list-style-type: square;"><span class="float-left"><i>Dynamics in a model of ERK regulation</i></span><span class="float-right">SIAM TX-LA Annual Meeting</span></li>
+												<li style="list-style-type: square;"><span class="float-left"><i>Sufficient conditions for 1- and 2- Inductively Pierced Codes</i></span>​<span class="float-right">SIAM AG 2019</span></li>
+
+												<li><span class="float-left"><i>Polyhedral Methods for Chemical Reaction Networks</i></span>​<span class="float-right">TAGSS, ICTP</span></li>
+
+												<li style="list-style-type: square;"><span class="float-left"><i>Toric ideals of Neural Codes</i></span>​<span class="float-right">AWM Research Symposium</span></li>
+
+												<li style="list-style-type: square;"><span class="float-left"><i>Hopf bifurcations in the ERK network</i></span>​<span class="float-right">AWM Research Symposium</span></li>
+
+												<li style="list-style-type: square;"><span class="float-left"><i>Oscillations in the ERK network</i></span>​<span class="float-right">AMS Spring Southeastern Sectional Meeting</span></li>
+
+												<li><span class="float-left"><i>Oscillations in the ERK network</i></span>​<span class="float-right">Graduate Student Seminar, Texas A&M</span></li>
+
+												<li style="list-style-type: square;"><span class="float-left"><i>Amoebas!</i></span>​<span class="float-right">TAMU-AMS GIGEM 2019</span></li>
+
+												<li><span class="float-left"><i>Chemical Reaction Networks</i></span>​<span class="float-right">Graduate Student Seminar, Texas A&M</span></li>
+
+												<li><span class="tiny float-left"><i>The capacity for Hopf bifurcations in the fully distributive<br>&emsp;dual-site phosphorylation network</i></span>​<span class="float-right">ICMS 2018</span></li><br>
+
+												<li style="list-style-type: square;"><span class="float-left"><i>Place field diagrams of neural codes</i></span>​<span class="float-right">JMM 2018</span></li>
+
+												<li style="list-style-type: square;"><span class="float-left"><i>Place field diagrams of neural codes</i></span>​<span class="float-right">AMS Fall Central Sectional Meeting</span></li>
+
+												<li style="list-style-type: square;"><span class="float-left"><i>Toric ideals of neural codes</i></span>​<span class="float-right">SIAM AG 2017</span></li>
+
+												<li><span class="float-left"><i>Rat GPS</i></span>​<span class="float-right">Graduate Student Seminar, Texas A&M</span></li>
+
+												<li><span class="float-left"><i>Drawing place field diagrams of neural codes using toric ideals</i></span>​<span class="float-right">TWIMS 2016</span></li>
+
+												<li><span class="float-left"><i>Differential Forms and Manifolds, Integration, Stoke's Theorem</i></span>​<span class="float-right">SWAG, Texas A&M</span></li>
+
+												<li style="list-style-type: square;"><span class="float-left"><i>Drawing place field diagrams of neural codes using toric ideals</i></span>​<span class="float-right">Geometry Seminar, Texas A&M</span></li>
+
+												<li style="list-style-type: square;"><span class="float-left"><i>Algebraic methods for realizing neural codes</i></span>​<span class="float-right">Colloquium, San Jose State University</span></li>
+
+												<li style="list-style-type: square;"><span class="float-left"><i>Algebraic methods for realizing neural codes</i></span>​<span class="float-right">Colloquium, Santa Clara University</span></li>
+
+												<li><span class="float-left"><i>Toric ideals of neural codes</i></span>​<span class="float-right">AMS Fall Western Sectional Meeting</span></li>
+
+												<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+											</ul>
+										</div>
+									</div>
+								</li>
+
+								<!-- Posters-->
+<!-- 								<li class="fromRight">
+									<div data-popup-id="17-3">
+										<h2 class="opacity-8 left ae-2">Posters</h2>
+										<div class="fix-7-12 center ae-3">
+											<ul class="unordered left list circle">
+												<li>Assignment 1 will be posted when assigned.</li>
+											</ul>
+										</div>
+									</div>
+								</li> -->
+
+
+								<!-- Conferences attended -->
+								<li class="fromRight">
+									<div data-popup-id="17-3">
+										<h2 class="opacity-8 left ae-2">Conferences Attended</h2>
+										<div class="fix-8-12 center ae-3">
+											<ul class="unordered left list circle">
+												<h4 class="opacity-8 left"><span class="opacity-8">2019:</span></h4>
+												<li>Graduate Algebra Symposium, Texas A&M University - October</li>
+												<li>Mini Texas Algebraic Geometry Symposium - October</li>
+												<li>SIAM AG 2019, Bern, Switzerland - July</li>
+												<li>Trieste Algebraic Geometry Summer School, ICTP, Italy - July</li>
+												<li>Collaborative Workshop for Women in Mathematical Biology, IPAM, UCLA - June</li>
+												<li>AWM Research Symposium 2018, Rice University - April</li>
+												<li>CombinaTexas, Texas A&M University - March</li>
+												<li>AMS Sectional Meeting, Auburn University - March</li>
+												<li>GIG'EM 2019, Texas A&M University - February</li>
+												<li>Texas Algebraic Geometry Symposium, UT Austin - February</li>
+												<br>
+												<h4 class="opacity-8 left"><span class="opacity-8">2018:</span></h4>
+												<li>Texas Women in Math Symposium (TWIMS) 2018, University of Houston - November</li>
+												<li>Mathematics of Reaction Networks Workshop, University of Wisconsin-Madison - August</li>
+												<li>SIAM Conference on the Life Sciences (SIAM-LS) 2018, Minneappolis, MN - August</li>
+												<li>International Congress of Mathematical Software (ICMS) 2018, Notre Dame University - July</li>
+												<li>CBMS Conference of Applications of Polynomial Systems, Texas Christian University - June</li>
+												<li>Texas Algebraic Geometry Symposium (TAGS), Texas A&M University - April</li>
+												<li>GIG'EM (Gathering in Graduate Expository Mathematics) 2018, Texas A&M University - March</li>
+												<li>Texas Geometry and Topology Conference (TGTC), University of Houston - February</li>
+												<li>CombinaTexas, Texas A&M University - February</li>
+												<li>Joint Mathematics Meeting (JMM), San Diego, CA - January</li>
+												<br>
+												<h4 class="opacity-8 left"><span class="opacity-8">2017:</span></h4>
+												<li>AMS Fall Central Sectional Meeting, University of North Texas - September</li>
+												<li>SIAM Conference on Applied Algebraic Geometry, Georgia Tech University - August</li>
+												<li>Texas Algebraic Geometry Symposium (TAGS), Rice University - April</li>
+												<br>
+												<h4 class="opacity-8 left"><span class="opacity-8">2016:</span></h4>
+												<li>Texas Women in Math Symposium (TWIMS), UT Austin - November</li>
+												<li>Texas Topology & Geometry Conference (TGTC), Texas A&M University - November</li>
+												<li>MAA Golden Sectional Meeting, UC Davis - February</li>
+												<br>
+												<h4 class="opacity-8 left"><span class="opacity-8">2015:</span></h4>
+												<li>AMS Western Sectional Meeting, CSU Fullerton - October</li>
+												<li>Biology and Mathematics in the Bay Area (BaMBA), San Jose State University - October</li>
+												<li>Bay Area Discrete Math Day (BAD Math), San Francisco State University - October</li>
+												<br>
+												<h4 class="opacity-8 left"><span class="opacity-8">2014:</span></h4>
+												<li>Biology and Mathematics in the Bay Area (BaMBA), UC Davis - October </li>
+												<li>Bay Area Discrete Math Day (BAD Math), Monterey, CA - October</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+
+
+
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+	<div class="background" style="background-image:url(assets/img/background/maroon/jr-korpa-Qmsf6GcMro4-unsplash.jpg)"></div>
+
+	<!--<div class="background" style="background-image: url(assets/img/background/sacha-styles-XK7thML3zEQ-unsplash.jpg)"></div>-->
+</section>
+
+<!-- bio -->
+<section class="slide fade-6 kenBurns" data-name="aboutme">
+	<div class="content">
+		<div class="container">
+				<div class="wrap">
+					<div class="fix-12-12">
+						<ul class="grid fixedSpaces center">
+							<li class="col-3-12 unordered col-tablet-1-2 col-phablet-1-1 ae-2 fromBottom">
+	  						<img class="rounded" width="500" src="assets/img/snake.JPG" alt="Nida Obatake" data-action="zoom"/>
+							</li>
+							<li class="col-9-12 unordered col-tablet-1-2 col-phablet-1-1 fromBottom">
+								<h1 class="huge ae-1"><span>About me</span></h1>
+	  							<p class="left fix-8-12 ae-3 margin-bottom-2">Howdy! I am a fourth year PhD candidate at Texas A&M University. My research lies in the exciting field of <i>algebraic biology</i>. These days, I am particularly interested in the number and stability of steady states in chemical reaction networks, but I have dabbled in some other areas of mathematical biology, including neural codes and nucleic acid modeling. Other miscellaneous facts:</p>
+	  							<ul class="fix-7-12 left list circle">
+	  								<li class="ae-4">I am a mathematical software afficionado and welcome the opportunity to <strike>break</strike> beta test your programs!</li>
+	  								<li class="ae-5">I LOVE cold-brew coffee and an extra tangy kombucha.</li>
+	  								<li class="ae-6">I welcome questions from prospective math graduate students - shoot me an email!</li>
+	  							</ul>
+
+	  						</li>
+						</ul>
+
+					</div>
+				</div>
+		</div>
+	</div>
+
+	<div class="background" style="background-image:url(assets/img/background/ali-yahya-bZD31MD4jhY-unsplash.jpg)"></div>
+</section>
+
+
+<!-- Panel Bottom #01 -->
+<!--<nav class="panel bottom forceMobileView">
+  <div class="sections desktop">
+    <div class="center"><span class="nextSlide"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down"></use></svg></span></div>
+  </div>
+</nav>-->
+
+<!-- Loading Progress Bar -->
+<!-- it's way up at the top of the page -->
+<div class="progress-bar blue"></div>
+
+
+</body>
+
+</html>
+
+<!-- how to read the CSS file via dropdown example -->
+<!-- <li><a href="#teaching">Teaching</a>
+		<ul class="unordered">
+			<li stroke="white"><a class="dropdown" href="#">TEST</a></li>	
+		</ul>
+	</li>
+-->
